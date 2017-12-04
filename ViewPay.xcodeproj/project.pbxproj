@@ -15,8 +15,6 @@
 		1184A47E1FCEB66800A5211B /* ViewPay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1184A4751FCEB66700A5211B /* ViewPay.framework */; };
 		1184A4851FCEB66800A5211B /* ViewPayTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1184A4841FCEB66800A5211B /* ViewPayTests.m */; };
 		1184A4871FCEB66800A5211B /* ViewPay.h in Headers */ = {isa = PBXBuildFile; fileRef = 1184A4771FCEB66700A5211B /* ViewPay.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1184A48A1FCEB66800A5211B /* ViewPay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1184A4751FCEB66700A5211B /* ViewPay.framework */; };
-		1184A48B1FCEB66800A5211B /* ViewPay.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1184A4751FCEB66700A5211B /* ViewPay.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		11D6EE281FCF18F600E555D1 /* ViewPay.m in Sources */ = {isa = PBXBuildFile; fileRef = 11D6EE261FCF18EF00E555D1 /* ViewPay.m */; };
 		11D6EE2A1FCF2B2F00E555D1 /* ViewPay_private.h in Headers */ = {isa = PBXBuildFile; fileRef = 11D6EE291FCF197900E555D1 /* ViewPay_private.h */; settings = {ATTRIBUTES = (Private, ); }; };
 /* End PBXBuildFile section */
@@ -36,30 +34,11 @@
 			remoteGlobalIDString = 1184A3EE1FCDB8D100A5211B;
 			remoteInfo = Demo;
 		};
-		1184A4881FCEB66800A5211B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 1184A3CD1FCDB8A300A5211B /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 1184A4741FCEB66700A5211B;
-			remoteInfo = ViewPay;
-		};
 /* End PBXContainerItemProxy section */
 
-/* Begin PBXCopyFilesBuildPhase section */
-		1184A4201FCDC5BE00A5211B /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				1184A48B1FCEB66800A5211B /* ViewPay.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
 /* Begin PBXFileReference section */
+		114E561C1FD5957C0076ECC6 /* build-universal-framework.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = "build-universal-framework.sh"; sourceTree = "<group>"; };
+		114E561D1FD595B50076ECC6 /* cleanup-framework.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = "cleanup-framework.sh"; sourceTree = "<group>"; };
 		1184A3EF1FCDB8D100A5211B /* Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1184A3F11FCDB8D100A5211B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1184A3F31FCDB8D100A5211B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -82,7 +61,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1184A48A1FCEB66800A5211B /* ViewPay.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -104,6 +82,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		114E561B1FD5938C0076ECC6 /* scripts */ = {
+			isa = PBXGroup;
+			children = (
+				114E561C1FD5957C0076ECC6 /* build-universal-framework.sh */,
+				114E561D1FD595B50076ECC6 /* cleanup-framework.sh */,
+			);
+			path = scripts;
+			sourceTree = "<group>";
+		};
 		1184A3CC1FCDB8A300A5211B = {
 			isa = PBXGroup;
 			children = (
@@ -139,6 +126,7 @@
 		1184A44D1FCEAF6600A5211B /* _private */ = {
 			isa = PBXGroup;
 			children = (
+				114E561B1FD5938C0076ECC6 /* scripts */,
 				1184A4761FCEB66700A5211B /* ViewPay */,
 				1184A4831FCEB66800A5211B /* ViewPayTests */,
 			);
@@ -187,12 +175,10 @@
 				1184A3EB1FCDB8D100A5211B /* Sources */,
 				1184A3EC1FCDB8D100A5211B /* Frameworks */,
 				1184A3ED1FCDB8D100A5211B /* Resources */,
-				1184A4201FCDC5BE00A5211B /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				1184A4891FCEB66800A5211B /* PBXTargetDependency */,
 			);
 			name = Demo;
 			productName = Demo;
@@ -347,11 +333,6 @@
 			isa = PBXTargetDependency;
 			target = 1184A3EE1FCDB8D100A5211B /* Demo */;
 			targetProxy = 1184A4811FCEB66800A5211B /* PBXContainerItemProxy */;
-		};
-		1184A4891FCEB66800A5211B /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 1184A4741FCEB66700A5211B /* ViewPay */;
-			targetProxy = 1184A4881FCEB66800A5211B /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -528,6 +509,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = _private/ViewPay/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = tv.viewpay.ViewPay;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
@@ -551,6 +533,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = _private/ViewPay/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = tv.viewpay.ViewPay;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";

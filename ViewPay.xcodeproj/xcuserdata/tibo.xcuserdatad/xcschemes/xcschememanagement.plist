@@ -4,15 +4,33 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>Demo.xcscheme</key>
+		<key>Demo.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
-		<key>ViewPay.xcscheme</key>
+		<key>ViewPay.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>1</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>1184A3EE1FCDB8D100A5211B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>1184A4741FCEB66700A5211B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>1184A47C1FCEB66800A5211B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>
