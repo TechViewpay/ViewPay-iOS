@@ -7,8 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		114C4AF91FD5C86C000CD3A0 /* ViewPay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 114C4AF81FD5C86C000CD3A0 /* ViewPay.framework */; };
 		114C4AFB1FD5C8B7000CD3A0 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 114C4AFA1FD5C8B7000CD3A0 /* README.md */; };
+		114C4AFC1FD5EDF7000CD3A0 /* cleanup-framework.sh in Resources */ = {isa = PBXBuildFile; fileRef = 114E561D1FD595B50076ECC6 /* cleanup-framework.sh */; };
+		114C4B391FD6D9E9000CD3A0 /* ViewPay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 114C4B381FD6D9E9000CD3A0 /* ViewPay.framework */; };
+		114C4B3A1FD6D9E9000CD3A0 /* ViewPay.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 114C4B381FD6D9E9000CD3A0 /* ViewPay.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		1184A3F21FCDB8D100A5211B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1184A3F11FCDB8D100A5211B /* AppDelegate.swift */; };
 		1184A3F41FCDB8D100A5211B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1184A3F31FCDB8D100A5211B /* ViewController.swift */; };
 		1184A3F71FCDB8D100A5211B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1184A3F51FCDB8D100A5211B /* Main.storyboard */; };
@@ -38,9 +40,23 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		114C4B021FD6C8A6000CD3A0 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				114C4B3A1FD6D9E9000CD3A0 /* ViewPay.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		114C4AF81FD5C86C000CD3A0 /* ViewPay.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ViewPay.framework; path = Dist/ViewPay.framework; sourceTree = SOURCE_ROOT; };
 		114C4AFA1FD5C8B7000CD3A0 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		114C4B381FD6D9E9000CD3A0 /* ViewPay.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ViewPay.framework; path = Dist/ViewPay.framework; sourceTree = SOURCE_ROOT; };
 		114E561C1FD5957C0076ECC6 /* build-universal-framework.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = "build-universal-framework.sh"; sourceTree = "<group>"; };
 		114E561D1FD595B50076ECC6 /* cleanup-framework.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = "cleanup-framework.sh"; sourceTree = "<group>"; };
 		1184A3EF1FCDB8D100A5211B /* Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -65,7 +81,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				114C4AF91FD5C86C000CD3A0 /* ViewPay.framework in Frameworks */,
+				114C4B391FD6D9E9000CD3A0 /* ViewPay.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,6 +115,7 @@
 		1184A3CC1FCDB8A300A5211B = {
 			isa = PBXGroup;
 			children = (
+				114C4B381FD6D9E9000CD3A0 /* ViewPay.framework */,
 				114C4AFA1FD5C8B7000CD3A0 /* README.md */,
 				1184A44D1FCEAF6600A5211B /* _private */,
 				1184A3F01FCDB8D100A5211B /* Demo */,
@@ -119,7 +136,6 @@
 		1184A3F01FCDB8D100A5211B /* Demo */ = {
 			isa = PBXGroup;
 			children = (
-				114C4AF81FD5C86C000CD3A0 /* ViewPay.framework */,
 				1184A3F11FCDB8D100A5211B /* AppDelegate.swift */,
 				1184A3F31FCDB8D100A5211B /* ViewController.swift */,
 				1184A3F51FCDB8D100A5211B /* Main.storyboard */,
@@ -182,6 +198,8 @@
 				1184A3EB1FCDB8D100A5211B /* Sources */,
 				1184A3EC1FCDB8D100A5211B /* Frameworks */,
 				1184A3ED1FCDB8D100A5211B /* Resources */,
+				114C4B021FD6C8A6000CD3A0 /* Embed Frameworks */,
+				114C4B3B1FD6DA06000CD3A0 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -291,6 +309,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				114C4AFC1FD5EDF7000CD3A0 /* cleanup-framework.sh in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,6 +321,22 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		114C4B3B1FD6DA06000CD3A0 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/bin/bash \"${BUILT_PRODUCTS_DIR}/${FRAMEWORKS_FOLDER_PATH}/ViewPay.framework/cleanup-framework.sh\"";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1184A3EB1FCDB8D100A5211B /* Sources */ = {
@@ -483,8 +518,9 @@
 					"$(PROJECT_DIR)/Dist",
 				);
 				INFOPLIST_FILE = Demo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = tv.viewpay.Demo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lelevier.ViewPay;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
@@ -504,8 +540,9 @@
 					"$(PROJECT_DIR)/Dist",
 				);
 				INFOPLIST_FILE = Demo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = tv.viewpay.Demo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lelevier.ViewPay;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
