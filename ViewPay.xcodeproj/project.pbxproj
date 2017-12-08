@@ -7,15 +7,36 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1123E9811FD86BF6008D2DE5 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 1123E9801FD86BF6008D2DE5 /* README.md */; };
+		1123E9831FD99B4F008D2DE5 /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = 1123E9821FD99B4F008D2DE5 /* data.json */; };
+		1123E9851FD99EB8008D2DE5 /* ArticlesListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1123E9841FD99EB8008D2DE5 /* ArticlesListTableViewController.swift */; };
+		1123E9871FD9C746008D2DE5 /* ArticleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1123E9861FD9C746008D2DE5 /* ArticleTableViewCell.swift */; };
+		1123E9891FDAD41F008D2DE5 /* ArticleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1123E9881FDAD41F008D2DE5 /* ArticleViewController.swift */; };
 		114C4AFB1FD5C8B7000CD3A0 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 114C4AFA1FD5C8B7000CD3A0 /* README.md */; };
 		114C4B391FD6D9E9000CD3A0 /* ViewPay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 114C4B381FD6D9E9000CD3A0 /* ViewPay.framework */; };
 		114C4B3A1FD6D9E9000CD3A0 /* ViewPay.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 114C4B381FD6D9E9000CD3A0 /* ViewPay.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		1184A3F21FCDB8D100A5211B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1184A3F11FCDB8D100A5211B /* AppDelegate.swift */; };
-		1184A3F41FCDB8D100A5211B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1184A3F31FCDB8D100A5211B /* ViewController.swift */; };
 		1184A3F71FCDB8D100A5211B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1184A3F51FCDB8D100A5211B /* Main.storyboard */; };
 		1184A3F91FCDB8D100A5211B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1184A3F81FCDB8D100A5211B /* Assets.xcassets */; };
 		1184A3FC1FCDB8D100A5211B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1184A3FA1FCDB8D100A5211B /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1123E97B1FD7F32A008D2DE5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 114C4BC71FD708DD000CD3A0 /* ViewPaySDK.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 114C4BAD1FD708A1000CD3A0;
+			remoteInfo = ViewPay;
+		};
+		1123E97D1FD7F32A008D2DE5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 114C4BC71FD708DD000CD3A0 /* ViewPaySDK.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 114C4BB61FD708A1000CD3A0;
+			remoteInfo = ViewPayTests;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		114C4B021FD6C8A6000CD3A0 /* Embed Frameworks */ = {
@@ -32,12 +53,16 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		1123E9801FD86BF6008D2DE5 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		1123E9821FD99B4F008D2DE5 /* data.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
+		1123E9841FD99EB8008D2DE5 /* ArticlesListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticlesListTableViewController.swift; sourceTree = "<group>"; };
+		1123E9861FD9C746008D2DE5 /* ArticleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleTableViewCell.swift; sourceTree = "<group>"; };
+		1123E9881FDAD41F008D2DE5 /* ArticleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleViewController.swift; sourceTree = "<group>"; };
 		114C4AFA1FD5C8B7000CD3A0 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		114C4B381FD6D9E9000CD3A0 /* ViewPay.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ViewPay.framework; path = Dist/ViewPay.framework; sourceTree = SOURCE_ROOT; };
 		114C4BC71FD708DD000CD3A0 /* ViewPaySDK.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = ViewPaySDK.xcodeproj; sourceTree = "<group>"; };
 		1184A3EF1FCDB8D100A5211B /* Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1184A3F11FCDB8D100A5211B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1184A3F31FCDB8D100A5211B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		1184A3F61FCDB8D100A5211B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1184A3F81FCDB8D100A5211B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1184A3FB1FCDB8D100A5211B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -56,6 +81,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1123E9771FD7F32A008D2DE5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1123E97C1FD7F32A008D2DE5 /* ViewPay.framework */,
+				1123E97E1FD7F32A008D2DE5 /* ViewPayTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		1184A3CC1FCDB8A300A5211B = {
 			isa = PBXGroup;
 			children = (
@@ -79,11 +113,14 @@
 			isa = PBXGroup;
 			children = (
 				1184A3F11FCDB8D100A5211B /* AppDelegate.swift */,
-				1184A3F31FCDB8D100A5211B /* ViewController.swift */,
+				1123E9841FD99EB8008D2DE5 /* ArticlesListTableViewController.swift */,
+				1123E9861FD9C746008D2DE5 /* ArticleTableViewCell.swift */,
+				1123E9881FDAD41F008D2DE5 /* ArticleViewController.swift */,
 				1184A3F51FCDB8D100A5211B /* Main.storyboard */,
 				1184A3F81FCDB8D100A5211B /* Assets.xcassets */,
 				1184A3FA1FCDB8D100A5211B /* LaunchScreen.storyboard */,
 				1184A3FD1FCDB8D100A5211B /* Info.plist */,
+				1123E9821FD99B4F008D2DE5 /* data.json */,
 			);
 			path = Demo;
 			sourceTree = "<group>";
@@ -91,6 +128,7 @@
 		1184A44D1FCEAF6600A5211B /* _private */ = {
 			isa = PBXGroup;
 			children = (
+				1123E9801FD86BF6008D2DE5 /* README.md */,
 				114C4BC71FD708DD000CD3A0 /* ViewPaySDK.xcodeproj */,
 			);
 			path = _private;
@@ -146,6 +184,12 @@
 			mainGroup = 1184A3CC1FCDB8A300A5211B;
 			productRefGroup = 1184A3D61FCDB8A300A5211B /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 1123E9771FD7F32A008D2DE5 /* Products */;
+					ProjectRef = 114C4BC71FD708DD000CD3A0 /* ViewPaySDK.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				1184A3EE1FCDB8D100A5211B /* Demo */,
@@ -153,13 +197,32 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXReferenceProxy section */
+		1123E97C1FD7F32A008D2DE5 /* ViewPay.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = ViewPay.framework;
+			remoteRef = 1123E97B1FD7F32A008D2DE5 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1123E97E1FD7F32A008D2DE5 /* ViewPayTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = ViewPayTests.xctest;
+			remoteRef = 1123E97D1FD7F32A008D2DE5 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
 /* Begin PBXResourcesBuildPhase section */
 		1184A3ED1FCDB8D100A5211B /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				1184A3FC1FCDB8D100A5211B /* LaunchScreen.storyboard in Resources */,
+				1123E9831FD99B4F008D2DE5 /* data.json in Resources */,
 				1184A3F91FCDB8D100A5211B /* Assets.xcassets in Resources */,
+				1123E9811FD86BF6008D2DE5 /* README.md in Resources */,
 				114C4AFB1FD5C8B7000CD3A0 /* README.md in Resources */,
 				1184A3F71FCDB8D100A5211B /* Main.storyboard in Resources */,
 			);
@@ -188,7 +251,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1184A3F41FCDB8D100A5211B /* ViewController.swift in Sources */,
+				1123E9851FD99EB8008D2DE5 /* ArticlesListTableViewController.swift in Sources */,
+				1123E9891FDAD41F008D2DE5 /* ArticleViewController.swift in Sources */,
+				1123E9871FD9C746008D2DE5 /* ArticleTableViewCell.swift in Sources */,
 				1184A3F21FCDB8D100A5211B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
