@@ -15,10 +15,23 @@ FOUNDATION_EXPORT double ViewPayVersionNumber;
 //! Project version string for ViewPay.
 FOUNDATION_EXPORT const unsigned char ViewPayVersionString[];
 
-// In this header, you should import all the public headers of your framework using statements like #import <ViewPay/PublicHeader.h>
+typedef NS_ENUM(NSUInteger, VPAdStatus)  {
+    VPAdStatusSuccess,
+    VPAdStatusNoAd,
+    VPAdStatusCancelled,
+    VPAdStatusError
+};
+
+typedef NS_ENUM(NSUInteger, VPUserGender) {
+    VPUserGenderMale,
+    VPUserGenderFemale,
+    VPUserGenderOther,
+    VPUserGenderNotSet
+};
 
 @interface ViewPay : NSObject
 
-+ (void)sayHello;
++ (void)setAccountID:(nonnull NSString *)accountID;
++ (void)presentAdWithContentCategory:(nullable NSString *)category andCallback:(nonnull void (^)(VPAdStatus status))callback;
 
 @end

@@ -22,4 +22,4 @@ for arch in $archs; do
     fi
 done
 
-echo "${stripped} removed from binary"
+echo "Architecture(s) ${stripped} have been removed from binary."

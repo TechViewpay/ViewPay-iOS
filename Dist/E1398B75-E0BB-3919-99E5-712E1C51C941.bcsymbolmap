@@ -1,0 +1,143 @@
+BCSymbolMap Version: 2.0
++[ViewPay setAccountID:]
++[ViewPay presentAdWithContentCategory:andCallback:]
+___52+[ViewPay presentAdWithContentCategory:andCallback:]_block_invoke
+___52+[ViewPay presentAdWithContentCategory:andCallback:]_block_invoke_2
+___copy_helper_block_
+___destroy_helper_block_
+___copy_helper_block_.20
+___destroy_helper_block_.21
++[ViewPay checkVideoWithContentCategory:andCallback:]
+___53+[ViewPay checkVideoWithContentCategory:andCallback:]_block_invoke
+___53+[ViewPay checkVideoWithContentCategory:andCallback:]_block_invoke_2
+___copy_helper_block_.47
+___destroy_helper_block_.48
+___53+[ViewPay checkVideoWithContentCategory:andCallback:]_block_invoke.51
+___copy_helper_block_.52
+___destroy_helper_block_.53
+___copy_helper_block_.55
+___destroy_helper_block_.56
++[ViewPay urlQueryWithContentCategory:]
++[ViewPay urlArguments]
+___block_descriptor_tmp
+___block_descriptor_tmp.23
+___block_descriptor_tmp.50
+___block_descriptor_tmp.54
+___block_descriptor_tmp.58
+Apple LLVM version 9.0.0 (clang-900.0.39.2)
+/Users/tibo/Desktop/ViewPay/ViewPay-work/_private/ViewPay/ViewPay.m
+/Users/tibo/Desktop/ViewPay/ViewPay-work/_private
+__destroy_helper_block_
+__copy_helper_block_
+__53+[ViewPay checkVideoWithContentCategory:andCallback:]_block_invoke.51
+__53+[ViewPay checkVideoWithContentCategory:andCallback:]_block_invoke_2
+__53+[ViewPay checkVideoWithContentCategory:andCallback:]_block_invoke
+__52+[ViewPay presentAdWithContentCategory:andCallback:]_block_invoke_2
+__52+[ViewPay presentAdWithContentCategory:andCallback:]_block_invoke
+-[VPWebViewController init]
+-[VPWebViewController viewDidLoad]
+-[VPWebViewController userContentController:didReceiveScriptMessage:]
+-[VPWebViewController webView:createWebViewWithConfiguration:forNavigationAction:windowFeatures:]
+-[VPWebViewController webView:decidePolicyForNavigationAction:decisionHandler:]
+-[VPWebViewController setupWebview]
+-[VPWebViewController setupCloseButton]
+-[VPWebViewController setupAccessContentButton]
+-[VPWebViewController showCloseButton]
+-[VPWebViewController closeWithInteraction:]
+___44-[VPWebViewController closeWithInteraction:]_block_invoke
+___44-[VPWebViewController closeWithInteraction:]_block_invoke.176
+___44-[VPWebViewController closeWithInteraction:]_block_invoke_2
+___copy_helper_block_.177
+___destroy_helper_block_.178
+___copy_helper_block_.180
+___destroy_helper_block_.181
+-[VPWebViewController cropAccessButton]
+___39-[VPWebViewController cropAccessButton]_block_invoke
+___copy_helper_block_.193
+___destroy_helper_block_.194
+-[VPWebViewController closeAction:]
+-[VPWebViewController adValidationCallback]
+-[VPWebViewController setAdValidationCallback:]
+-[VPWebViewController url]
+-[VPWebViewController setUrl:]
+-[VPWebViewController webView]
+-[VPWebViewController setWebView:]
+-[VPWebViewController closeButton]
+-[VPWebViewController setCloseButton:]
+-[VPWebViewController accessContentButton]
+-[VPWebViewController setAccessContentButton:]
+-[VPWebViewController accessContentButtonDisclosure]
+-[VPWebViewController setAccessContentButtonDisclosure:]
+-[VPWebViewController accessContentButtonRightConstraint]
+-[VPWebViewController setAccessContentButtonRightConstraint:]
+-[VPWebViewController status]
+-[VPWebViewController setStatus:]
+-[VPWebViewController .cxx_destruct]
+___clang_at_available_requires_core_foundation_framework
+___block_descriptor_tmp.179
+___block_descriptor_tmp.183
+___block_descriptor_tmp.195
+_OBJC_IVAR_$_VPWebViewController._adValidationCallback
+_OBJC_IVAR_$_VPWebViewController._url
+_OBJC_IVAR_$_VPWebViewController._webView
+_OBJC_IVAR_$_VPWebViewController._closeButton
+_OBJC_IVAR_$_VPWebViewController._accessContentButton
+_OBJC_IVAR_$_VPWebViewController._accessContentButtonDisclosure
+_OBJC_IVAR_$_VPWebViewController._accessContentButtonRightConstraint
+_OBJC_IVAR_$_VPWebViewController._status
+l_OBJC_PROTOCOL_$_NSObject
+l_OBJC_LABEL_PROTOCOL_$_NSObject
+l_OBJC_PROTOCOL_$_WKNavigationDelegate
+l_OBJC_LABEL_PROTOCOL_$_WKNavigationDelegate
+l_OBJC_PROTOCOL_$_WKScriptMessageHandler
+l_OBJC_LABEL_PROTOCOL_$_WKScriptMessageHandler
+l_OBJC_PROTOCOL_$_WKUIDelegate
+l_OBJC_LABEL_PROTOCOL_$_WKUIDelegate
+/Users/tibo/Desktop/ViewPay/ViewPay-work/_private/ViewPay/VPWebViewController.m
+/Users/tibo/Desktop/ViewPay/ViewPay-work/_private/ViewPay/VPWebViewController.h
+__39-[VPWebViewController cropAccessButton]_block_invoke
+__44-[VPWebViewController closeWithInteraction:]_block_invoke_2
+__44-[VPWebViewController closeWithInteraction:]_block_invoke.176
+__44-[VPWebViewController closeWithInteraction:]_block_invoke
++[NSURL(ViewPay) vp_baseURL]
++[NSURL(ViewPay) vp_URLForCheckVideoWithContentCategory:]
++[NSURL(ViewPay) vp_URLForAdSelectorWithContentCategory:]
+/Users/tibo/Desktop/ViewPay/ViewPay-work/_private/ViewPay/NSURL+ViewPay.m
++[UIViewController(ViewPay) vp_presentedViewController]
++[UIViewController(ViewPay) vp_presentedViewControllerForRootViewController:]
+/Users/tibo/Desktop/ViewPay/ViewPay-work/_private/ViewPay/UIViewController+ViewPay.m
++[UIImage(ViewPay) vp_closeImage]
++[UIImage(ViewPay) vp_disclosureImage]
+/Users/tibo/Desktop/ViewPay/ViewPay-work/_private/ViewPay/UIImage+ViewPay.m
+CGPointMake
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.2.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGGeometry.h
++[ViewPayDataManager sharedManager]
+___35+[ViewPayDataManager sharedManager]_block_invoke
+-[ViewPayDataManager userLocation]
+-[ViewPayDataManager accountID]
+-[ViewPayDataManager setAccountID:]
+-[ViewPayDataManager accessMessage]
+-[ViewPayDataManager setAccessMessage:]
+-[ViewPayDataManager userAge]
+-[ViewPayDataManager setUserAge:]
+-[ViewPayDataManager userGender]
+-[ViewPayDataManager setUserGender:]
+-[ViewPayDataManager hostID]
+-[ViewPayDataManager setHostID:]
+-[ViewPayDataManager locationManager]
+-[ViewPayDataManager setLocationManager:]
+-[ViewPayDataManager .cxx_destruct]
+_sharedManager.sharedManager
+_sharedManager.onceToken
+_OBJC_IVAR_$_ViewPayDataManager._accountID
+_OBJC_IVAR_$_ViewPayDataManager._accessMessage
+_OBJC_IVAR_$_ViewPayDataManager._userAge
+_OBJC_IVAR_$_ViewPayDataManager._userGender
+_OBJC_IVAR_$_ViewPayDataManager._hostID
+_OBJC_IVAR_$_ViewPayDataManager._locationManager
+/Users/tibo/Desktop/ViewPay/ViewPay-work/_private/ViewPay/ViewPayDataManager.m
+/Users/tibo/Desktop/ViewPay/ViewPay-work/_private/ViewPay/ViewPayDataManager.h
+__35+[ViewPayDataManager sharedManager]_block_invoke
+_dispatch_once
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.2.sdk/usr/include/dispatch/once.h
+/Users/tibo/Library/Developer/Xcode/DerivedData/ViewPaySDK-efvjgjsqcvfbyggmvoomkgjcmhwg/Build/Intermediates.noindex/ArchiveIntermediates/ViewPay/IntermediateBuildFilesPath/ViewPaySDK.build/Release-iphoneos/ViewPay.build/DerivedSources/ViewPay_vers.c
