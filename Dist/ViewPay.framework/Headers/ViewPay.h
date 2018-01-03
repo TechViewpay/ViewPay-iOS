@@ -23,15 +23,20 @@ typedef NS_ENUM(NSUInteger, VPAdStatus)  {
 };
 
 typedef NS_ENUM(NSUInteger, VPUserGender) {
+    VPUserGenderNotSet,
     VPUserGenderMale,
     VPUserGenderFemale,
-    VPUserGenderOther,
-    VPUserGenderNotSet
+    VPUserGenderOther
 };
 
 @interface ViewPay : NSObject
 
 + (void)setAccountID:(nonnull NSString *)accountID;
-+ (void)presentAdWithContentCategory:(nullable NSString *)category andCallback:(nonnull void (^)(VPAdStatus status))callback;
+
++ (void)setUserGender:(VPUserGender)gender;
++ (void)setUserAge:(int)age;
+
++ (void)presentAdWithCallback:(nonnull void (^)(VPAdStatus status))callback;
++ (void)checkVideoWithContentCategory:(nullable NSString *)category andCallback:(nonnull void (^)(BOOL success))callback;
 
 @end
