@@ -19,7 +19,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         
         ViewPay.setAccountID("6f7187170e346d99")
-        
+        ViewPay.setUserAge(42)
+        ViewPay.setUserGender(.male)
+
         return true
     }
 

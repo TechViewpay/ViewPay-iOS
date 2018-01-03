@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import ViewPay
 
 class ArticlesListTableViewController: UITableViewController {
     
@@ -47,24 +46,11 @@ class ArticlesListTableViewController: UITableViewController {
         
         return cell
     }
-    
-    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        ViewPay.presentAd(withContentCategory: "sample") { (status) in
-            if (status == .success) {
-                let articleController = self.storyboard?.instantiateViewController(withIdentifier: "articleController") as! ArticleViewController
-                articleController.urlString = self.articles[indexPath.row]["content_url"]
-                self.navigationController?.pushViewController(articleController, animated: true)
-            }
-        }
-        
-    }
 
     // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//        let indexPath = self.tableView.indexPathForSelectedRow!
-//        (segue.destination as! ArticleViewController).urlString = self.articles[indexPath.row]["content_url"]
-//    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let indexPath = self.tableView.indexPathForSelectedRow!
+        (segue.destination as! ArticleViewController).urlString = self.articles[indexPath.row]["content_url"]
+    }
 
 }

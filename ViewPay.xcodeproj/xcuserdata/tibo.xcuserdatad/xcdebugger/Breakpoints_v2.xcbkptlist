@@ -9,69 +9,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "Yes"
-            filePath = "_private/ViewPay/ViewPay.m"
-            timestampString = "536087581.456536"
+            filePath = "_private/ViewPay/VPWebViewController.m"
+            timestampString = "536692726.409743"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "35"
-            endingLineNumber = "35"
-            landmarkName = "+presentAdWithContentCategory:andCallback:"
-            landmarkType = "7">
-            <Actions>
-               <BreakpointActionProxy
-                  ActionExtensionID = "Xcode.BreakpointAction.DebuggerCommand">
-                  <ActionContent
-                     consoleCommand = "po webController.url.absoluteString">
-                  </ActionContent>
-               </BreakpointActionProxy>
-            </Actions>
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "__52+[ViewPay presentAdWithContentCategory:andCallback:]_block_invoke"
-                  moduleName = "ViewPay"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/tibo/Desktop/ViewPay/ViewPay-work/_private/ViewPay/ViewPay.m"
-                  timestampString = "536172840.730067"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "36"
-                  endingLineNumber = "36"
-                  offsetFromSymbolStart = "306">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "__52+[ViewPay presentAdWithContentCategory:andCallback:]_block_invoke_2"
-                  moduleName = "ViewPay"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/tibo/Desktop/ViewPay/ViewPay-work/_private/ViewPay/ViewPay.m"
-                  timestampString = "536172840.734003"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "36"
-                  endingLineNumber = "36"
-                  offsetFromSymbolStart = "12">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "Yes"
-            filePath = "_private/ViewPay/ViewPay.m"
-            timestampString = "536087581.456642"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "55"
-            endingLineNumber = "55"
-            landmarkName = "+checkVideoWithContentCategory:andCallback:"
+            startingLineNumber = "49"
+            endingLineNumber = "49"
+            landmarkName = "-viewDidLoad"
             landmarkType = "7">
             <Actions>
                <BreakpointActionProxy
@@ -89,19 +33,19 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "Yes"
-            filePath = "_private/ViewPay/VPWebViewController.m"
-            timestampString = "536087581.456718"
+            filePath = "_private/ViewPay/ViewPay.m"
+            timestampString = "536692726.410063"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "104"
-            endingLineNumber = "104"
-            landmarkName = "-webView:decidePolicyForNavigationAction:decisionHandler:"
+            startingLineNumber = "70"
+            endingLineNumber = "70"
+            landmarkName = "+checkVideoWithContentCategory:andCallback:"
             landmarkType = "7">
             <Actions>
                <BreakpointActionProxy
                   ActionExtensionID = "Xcode.BreakpointAction.DebuggerCommand">
                   <ActionContent
-                     consoleCommand = "po navigationAction.request.URL.absoluteString">
+                     consoleCommand = "po url.absoluteString">
                   </ActionContent>
                </BreakpointActionProxy>
             </Actions>

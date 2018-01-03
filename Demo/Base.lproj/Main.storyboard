@@ -52,6 +52,7 @@
                                 <connections>
                                     <outlet property="articleImageView" destination="Yog-Sq-mor" id="c3C-Bp-Fgx"/>
                                     <outlet property="articleTitleLabel" destination="k9O-FN-yCZ" id="43v-H4-LWY"/>
+                                    <segue destination="fo1-ui-aHE" kind="show" id="v2h-r6-zLy"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -78,18 +79,82 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </webView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZA9-k0-uLi">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hfJ-B1-t5f">
+                                        <rect key="frame" x="8" y="466" width="359" height="101"/>
+                                        <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="101" id="z9b-7I-g4W"/>
+                                        </constraints>
+                                        <state key="normal">
+                                            <string key="title">Regardez une pub et 
+accédez à votre contenu gratuitement</string>
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="payWithViewPayActionWithSender:" destination="fo1-ui-aHE" eventType="touchUpInside" id="xXh-aZ-Aiy"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hJG-Qj-aAW">
+                                        <rect key="frame" x="112" y="381" width="150" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <state key="normal" title="Pay $0.99">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="payActionWithSender:" destination="fo1-ui-aHE" eventType="touchUpInside" id="oOo-vB-2ob"/>
+                                        </connections>
+                                    </button>
+                                    <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="white" translatesAutoresizingMaskIntoConstraints="NO" id="kdx-mp-WZr">
+                                        <rect key="frame" x="177" y="506" width="20" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="20" id="CVQ-0F-pJT"/>
+                                            <constraint firstAttribute="width" constant="20" id="o8Z-lQ-s85"/>
+                                        </constraints>
+                                    </activityIndicatorView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Le contenu auquel vous souhaitez accéder est payant." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IV6-TX-Ra3">
+                                        <rect key="frame" x="8" y="175" width="359" height="85"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="85" id="rTZ-v7-sr1"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="hfJ-B1-t5f" secondAttribute="trailing" constant="8" id="Aui-H4-ePx"/>
+                                    <constraint firstAttribute="bottom" secondItem="hfJ-B1-t5f" secondAttribute="bottom" constant="100" id="B86-mx-0ox"/>
+                                    <constraint firstItem="IV6-TX-Ra3" firstAttribute="top" secondItem="ZA9-k0-uLi" secondAttribute="top" constant="175" id="Dz4-Do-KIl"/>
+                                    <constraint firstAttribute="trailing" secondItem="IV6-TX-Ra3" secondAttribute="trailing" constant="8" id="W72-dn-wur"/>
+                                    <constraint firstItem="kdx-mp-WZr" firstAttribute="centerX" secondItem="ZA9-k0-uLi" secondAttribute="centerX" id="ddv-bH-Z5i"/>
+                                    <constraint firstItem="IV6-TX-Ra3" firstAttribute="leading" secondItem="ZA9-k0-uLi" secondAttribute="leading" constant="8" id="deM-h7-0b5"/>
+                                    <constraint firstItem="hfJ-B1-t5f" firstAttribute="leading" secondItem="ZA9-k0-uLi" secondAttribute="leading" constant="8" id="o5i-Fz-1zg"/>
+                                    <constraint firstAttribute="bottom" secondItem="kdx-mp-WZr" secondAttribute="bottom" constant="141" id="rOB-eZ-2cg"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="jMC-KW-pjG" firstAttribute="leading" secondItem="79u-a5-joT" secondAttribute="leading" id="7hu-8F-cHC"/>
+                            <constraint firstItem="ZA9-k0-uLi" firstAttribute="top" secondItem="DfL-sm-kk1" secondAttribute="top" id="9hR-Ir-pHv"/>
                             <constraint firstItem="jMC-KW-pjG" firstAttribute="bottom" secondItem="79u-a5-joT" secondAttribute="bottom" id="S51-Km-nNm"/>
+                            <constraint firstItem="ZA9-k0-uLi" firstAttribute="bottom" secondItem="79u-a5-joT" secondAttribute="bottom" id="U1Q-K5-vSb"/>
                             <constraint firstItem="jMC-KW-pjG" firstAttribute="top" secondItem="DfL-sm-kk1" secondAttribute="top" id="eSp-Fs-iuU"/>
+                            <constraint firstItem="ZA9-k0-uLi" firstAttribute="trailing" secondItem="79u-a5-joT" secondAttribute="trailing" id="elo-r7-bx0"/>
                             <constraint firstItem="jMC-KW-pjG" firstAttribute="trailing" secondItem="79u-a5-joT" secondAttribute="trailing" id="gR2-Es-gFn"/>
+                            <constraint firstItem="ZA9-k0-uLi" firstAttribute="leading" secondItem="79u-a5-joT" secondAttribute="leading" id="kcU-dB-dVn"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="79u-a5-joT"/>
                     </view>
-                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <connections>
+                        <outlet property="loader" destination="kdx-mp-WZr" id="23l-ya-GuZ"/>
+                        <outlet property="payView" destination="ZA9-k0-uLi" id="Mq3-QB-h9Q"/>
+                        <outlet property="viewPayButton" destination="hfJ-B1-t5f" id="FVq-zg-rYb"/>
                         <outlet property="webView" destination="jMC-KW-pjG" id="TBR-go-wpj"/>
                     </connections>
                 </viewController>
