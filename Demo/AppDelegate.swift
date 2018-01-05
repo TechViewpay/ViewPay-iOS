@@ -18,7 +18,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
-        ViewPay.setAccountID("6f7187170e346d99")
+        ViewPay.setAccountID("b23d3f0235ae89e4")
         ViewPay.setUserAge(42)
         ViewPay.setUserGender(.male)
 
