@@ -31,8 +31,9 @@ class ArticleViewController: UIViewController {
         ViewPay.checkVideo(withContentCategory: "sample") { (success) in
             if (success) {
                 self.viewPayButton?.isHidden = false
-                self.loader?.stopAnimating()
             }
+            
+            self.loader?.stopAnimating()
         }
         
         if let string = self.urlString, let url = URL(string: string) {
@@ -43,22 +44,28 @@ class ArticleViewController: UIViewController {
     @IBAction func payAction(sender :AnyObject) {
         let alertController = UIAlertController(title: "Confirm Your In-App Purchase", message: "Do you want to buy one article product for $0.99?", preferredStyle: .alert)
         alertController.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
-        alertController.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+        alertController.addAction(UIAlertAction(title: "OK", style: .default, handler: { (action) in
+            self.accessContent()
+        }))
         self.present(alertController, animated: true, completion: nil)
     }
     
     @IBAction func payWithViewPayAction(sender :AnyObject) {
         ViewPay.presentAd { (status) in
             if (status == .success) {
-                var frame = self.payView!.frame
-                frame.origin.y = self.view.frame.height
-                UIView.animate(withDuration: 0.2, animations: {
-                    self.payView?.frame = frame
-                }, completion: { (complete) in
-                    self.payView?.removeFromSuperview()
-                })
+                self.accessContent()
             }
         }
+    }
+    
+    func accessContent() {
+        var frame = self.payView!.frame
+        frame.origin.y = self.view.frame.height
+        UIView.animate(withDuration: 0.2, animations: {
+            self.payView?.frame = frame
+        }, completion: { (complete) in
+            self.payView?.removeFromSuperview()
+        })
     }
     
     
