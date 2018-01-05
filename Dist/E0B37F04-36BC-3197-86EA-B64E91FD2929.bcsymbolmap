@@ -13,26 +13,26 @@ ___destroy_helper_block_.27
 +[ViewPay checkVideoWithContentCategory:andCallback:]
 ___53+[ViewPay checkVideoWithContentCategory:andCallback:]_block_invoke
 ___53+[ViewPay checkVideoWithContentCategory:andCallback:]_block_invoke_2
-___copy_helper_block_.63
-___destroy_helper_block_.64
-___53+[ViewPay checkVideoWithContentCategory:andCallback:]_block_invoke.67
-___copy_helper_block_.68
-___destroy_helper_block_.69
-___copy_helper_block_.71
-___destroy_helper_block_.72
+___copy_helper_block_.69
+___destroy_helper_block_.70
+___53+[ViewPay checkVideoWithContentCategory:andCallback:]_block_invoke.73
+___copy_helper_block_.74
+___destroy_helper_block_.75
+___copy_helper_block_.77
+___destroy_helper_block_.78
 +[ViewPay urlQuery]
 +[ViewPay urlArguments]
 ___block_descriptor_tmp
 ___block_descriptor_tmp.29
-___block_descriptor_tmp.66
-___block_descriptor_tmp.70
-___block_descriptor_tmp.74
+___block_descriptor_tmp.72
+___block_descriptor_tmp.76
+___block_descriptor_tmp.80
 Apple LLVM version 9.0.0 (clang-900.0.39.2)
 /Users/tibo/Desktop/ViewPay/ViewPay-work/_private/ViewPay/ViewPay.m
 /Users/tibo/Desktop/ViewPay/ViewPay-work/_private
 __destroy_helper_block_
 __copy_helper_block_
-__53+[ViewPay checkVideoWithContentCategory:andCallback:]_block_invoke.67
+__53+[ViewPay checkVideoWithContentCategory:andCallback:]_block_invoke.73
 __53+[ViewPay checkVideoWithContentCategory:andCallback:]_block_invoke_2
 __53+[ViewPay checkVideoWithContentCategory:andCallback:]_block_invoke
 __34+[ViewPay _presentAdWithCallback:]_block_invoke
@@ -109,6 +109,8 @@ __44-[VPWebViewController closeWithInteraction:]_block_invoke
 +[UIImage(ViewPay) vp_closeImage]
 +[UIImage(ViewPay) vp_disclosureImage]
 /Users/tibo/Desktop/ViewPay/ViewPay-work/_private/ViewPay/UIImage+ViewPay.m
+CGPointMake
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.2.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGGeometry.h
 +[ViewPayDataManager sharedManager]
 ___35+[ViewPayDataManager sharedManager]_block_invoke
 -[ViewPayDataManager userLocation]
