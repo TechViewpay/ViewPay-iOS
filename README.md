@@ -47,22 +47,22 @@ ViewPay.checkVideo(withContentCategory: nil) { (success) in
 	}
 	else {
 		// Aucune campagne n'est disponible. Vos autres alternatives de payement sont toujours proposées à votre utilisateur.
-    }   
+	}   
 }
 ```
 
 en Objective-C:
 
 ```objective-c
-[ViewPay checkVideoWithCategory:nil 
-						andCallback:^(BOOL success) {
-							if (success) {
-								// Des campagnes sont disponibles.
-								// Faites apparaitre le bouton dans votre paywall permettant à l'utilisateur d'accèder à son contenu via ViewPay.
-							}
-							else {
-								// Aucune campagne n'est disponible. Vos autres alternatives de payement sont toujours proposées à votre utilisateur.
-						    } 
+[ViewPay checkVideoWithCategory:nil
+		andCallback:^(BOOL success) {
+			if (success) {
+				// Des campagnes sont disponibles.
+				// Faites apparaitre le bouton dans votre paywall permettant à l'utilisateur d'accèder à son contenu via ViewPay.
+			}
+			else {
+				// Aucune campagne n'est disponible. Vos autres alternatives de payement sont toujours proposées à votre utilisateur.
+			} 
 }];
 ```
 
@@ -88,9 +88,9 @@ en Objective-C :
 
 ```objective-c
 [ViewPay presentAdWithCallback:^(VPAdStatus status) {
-							if (status == VPAdStatusSuccess) {
-								// Autorisez l'utilisateur à accéder à son contenu.
-							}
+	if (status == VPAdStatusSuccess) {
+		// Autorisez l'utilisateur à accéder à son contenu.
+	}
 }];
 ```
 
@@ -141,9 +141,9 @@ en Objective-C :
 
 ```objective-c
 [ViewPay checkVideoWithCategory:@"cinema" 
-						andCallback:^(BOOL success) {
-							if (success) {
-								...
-						    } 
+	andCallback:^(BOOL success) {
+		if (success) {
+			...
+		} 
 }];
 ```
