@@ -9,11 +9,34 @@ Pour rappel, Viewpay a pour vocation d'être une alternative à d'autres options
 - Utiliser Xcode 7.0 ou supérieur 
 - Compatibilité iOS 9.0 ou supérieur
 
-## Intégration du SDK
+## Installation du SDK
+
+### Cocoapods
+
+Pour une simplifier l'installation et la mise à jour de vos librairies externes nous vous conseillons d'utiliser [Cocoapods](https://www.cocoapods.org).
+
+Dans votre fichier `Podfile` ajouter la référence au SDK ViewPay:
+
+```
+pod 'ViewPay-iOS-SDK'
+```
+
+Puis, lancez la commande `pod install`.
+
+Afin de maintenir le SDK à jour executez la commande `pod update` avant chaque mise à jour de votre application.
+
+### Installation manuelle
+
+Si vous ne souhaitez pas utiliser Cocoapods vous pouvez installer le SDK manuellement :
 
 - Téléchargez la dernière version du SDK via le lien suivant : [ViewPay.zip](https://github.com/TechViewpay/ViewPay-iOS/blob/master/Dist/ViewPay.zip?raw=true)
 - Décompressez l'archive
 - Glissez le fichier `ViewPay.framework` dans votre projet, sélectionnez l'option `Destination: Copy items if needed` et ajoutez le fichier à la target principale de votre projet.
+
+### Configuration du script post-build
+
+Enfin, pour terminer l'installation vous devez ajouter une étape dans la configuration de votre build :
+
 - Rendez-vous dans la configuration de votre projet, sélectionnez votre target principale, onglet `Build Phases`, ajouter une étape en cliquant sur le `+` en haut à gauche, selectionnez `New Run Script Phase`.
 - Ouvrez le détail de la nouvelle étape à l'aide de la petite flèche et dans le contenu de l'étape entrez l'appel au script suivant: `/bin/bash "${BUILT_PRODUCTS_DIR}/${FRAMEWORKS_FOLDER_PATH}/ViewPay.framework/cleanup-framework.sh"`
 - Si vous le souhaitez vous pouvez renommer la phase en double cliquant sur le titre (par défaut "Run Script") afin de lui donner un nom plus facilement reconnaissable.
