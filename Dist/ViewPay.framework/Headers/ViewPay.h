@@ -9,8 +9,6 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
-#define VIEWPAY_VERSION @"1.0"
-
 typedef NS_ENUM(NSUInteger, VPAdStatus)  {
     VPAdStatusSuccess,
     VPAdStatusNoAd,
