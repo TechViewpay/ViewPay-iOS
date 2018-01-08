@@ -34,7 +34,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "Yes"
             filePath = "_private/ViewPay/ViewPay.m"
-            timestampString = "536853492.678897"
+            timestampString = "537101638.4193209"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "82"
@@ -46,6 +46,30 @@
                   ActionExtensionID = "Xcode.BreakpointAction.DebuggerCommand">
                   <ActionContent
                      consoleCommand = "po url.absoluteString">
+                  </ActionContent>
+               </BreakpointActionProxy>
+            </Actions>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "Yes"
+            filePath = "_private/ViewPay/ViewPay.m"
+            timestampString = "537101638.419786"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "184"
+            endingLineNumber = "184"
+            landmarkName = "+urlArguments"
+            landmarkType = "7">
+            <Actions>
+               <BreakpointActionProxy
+                  ActionExtensionID = "Xcode.BreakpointAction.DebuggerCommand">
+                  <ActionContent
+                     consoleCommand = "po dic">
                   </ActionContent>
                </BreakpointActionProxy>
             </Actions>

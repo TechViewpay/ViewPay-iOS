@@ -9,11 +9,7 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
-//! Project version number for ViewPay.
-FOUNDATION_EXPORT double ViewPayVersionNumber;
-
-//! Project version string for ViewPay.
-FOUNDATION_EXPORT const unsigned char ViewPayVersionString[];
+#define VIEWPAY_VERSION @"1.0"
 
 typedef NS_ENUM(NSUInteger, VPAdStatus)  {
     VPAdStatusSuccess,
