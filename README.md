@@ -4,6 +4,10 @@
 Ce guide a pour objectif de vous guider dans la mise en place du SDK ViewPay dans votre application iOS en `Swift` ou `Objective-C`.
 Pour rappel, Viewpay est une solution de micro-paiement par l'attention publicitaire, qui permet à l'utilisateur de débloquer un contenu premium en regardant une publicité. Viewpay a pour vocation d'être une alternative à d'autres options pour débloquer un contenu premium, et ne doit pas être installé comme seule option d'un paywall.
 
+Voici un exemple de déblocage d'article avec Viewpay : 
+
+![sample](https://github.com/TechViewpay/ViewPay-iOS/blob/master/DocImages/parcours_vp_mobile3.png?raw=true)
+
 ## Prérequis
 
 - Utiliser Xcode 7.0 ou supérieur 
