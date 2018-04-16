@@ -37,8 +37,6 @@ Si vous ne souhaitez pas utiliser Cocoapods vous pouvez installer le SDK manuell
 - Décompressez l'archive
 - Glissez le fichier `ViewPay.framework` dans votre projet, sélectionnez l'option `Destination: Copy items if needed` et ajoutez le fichier à la target principale de votre projet.
 
-### Configuration du script post-build
-
 Enfin, pour terminer l'installation vous devez ajouter une étape dans la configuration de votre build :
 
 - Rendez-vous dans la configuration de votre projet, sélectionnez votre target principale, onglet `Build Phases`, ajouter une étape en cliquant sur le `+` en haut à gauche, selectionnez `New Run Script Phase`.
