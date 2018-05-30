@@ -37,10 +37,24 @@ Si vous ne souhaitez pas utiliser Cocoapods vous pouvez installer le SDK manuell
 - Décompressez l'archive
 - Glissez le fichier `ViewPay.framework` dans votre projet, sélectionnez l'option `Destination: Copy items if needed` et ajoutez le fichier à la target principale de votre projet.
 
-Enfin, pour terminer l'installation vous devez ajouter une étape dans la configuration de votre build :
+Enfin, pour terminer l'installation vous devez ajouter une étape scrip dans la configuration de votre build :
 
 - Rendez-vous dans la configuration de votre projet, sélectionnez votre target principale, onglet `Build Phases`, ajouter une étape en cliquant sur le `+` en haut à gauche, selectionnez `New Run Script Phase`.
-- Ouvrez le détail de la nouvelle étape à l'aide de la petite flèche et dans le contenu de l'étape entrez l'appel au script suivant: `/bin/bash "${BUILT_PRODUCTS_DIR}/${FRAMEWORKS_FOLDER_PATH}/ViewPay.framework/cleanup-framework.sh"`
+- Ouvrez le détail de la nouvelle étape à l'aide de la petite flèche et dans le contenu de l'étape entrez le script suivant: 
+```
+EXEC="${BUILT_PRODUCTS_DIR}/${FRAMEWORKS_FOLDER_PATH}/ViewPay.framework/ViewPay"
+
+archs="$(lipo -info "${EXEC}" | rev | cut -d ':' -f1 | rev)"
+stripped=""
+for arch in $archs; do
+if ! [[ "${VALID_ARCHS}" == *"$arch"* ]]; then
+lipo -remove "$arch" -output "${EXEC}" "${EXEC}" || exit 1
+stripped="$stripped $arch"
+fi
+done
+
+echo "Architecture(s) ${stripped} have been removed from binary."
+```
 - Si vous le souhaitez vous pouvez renommer la phase en double cliquant sur le titre (par défaut "Run Script") afin de lui donner un nom plus facilement reconnaissable.
 
 ## Initialisation du SDK
