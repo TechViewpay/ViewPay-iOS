@@ -93,7 +93,7 @@ ViewPay.checkVideo(withContentCategory: nil) { (success) in
 en Objective-C:
 
 ```objective-c
-[ViewPay checkVideoWithCategory:nil
+[ViewPay checkVideoWithContentCategory:nil
 		andCallback:^(BOOL success) {
 			if (success) {
 				// Des campagnes sont disponibles.
