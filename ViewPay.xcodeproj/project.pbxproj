@@ -255,7 +255,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "/bin/bash \"${BUILT_PRODUCTS_DIR}/${FRAMEWORKS_FOLDER_PATH}/ViewPay.framework/cleanup-framework.sh\"";
+			shellScript = "EXEC=\"${BUILT_PRODUCTS_DIR}/${FRAMEWORKS_FOLDER_PATH}/ViewPay.framework/ViewPay\"\n\narchs=\"$(lipo -info \"${EXEC}\" | rev | cut -d ':' -f1 | rev)\"\nstripped=\"\"\nfor arch in $archs; do\nif ! [[ \"${VALID_ARCHS}\" == *\"$arch\"* ]]; then\nlipo -remove \"$arch\" -output \"${EXEC}\" \"${EXEC}\" || exit 1\nstripped=\"$stripped $arch\"\nfi\ndone\n\necho \"Architecture(s) ${stripped} have been removed from binary.\"\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
