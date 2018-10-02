@@ -13,26 +13,26 @@ ___destroy_helper_block_.27
 +[ViewPay checkVideoWithContentCategory:andCallback:]
 ___53+[ViewPay checkVideoWithContentCategory:andCallback:]_block_invoke
 ___53+[ViewPay checkVideoWithContentCategory:andCallback:]_block_invoke_2
-___copy_helper_block_.69
-___destroy_helper_block_.70
-___53+[ViewPay checkVideoWithContentCategory:andCallback:]_block_invoke.73
-___copy_helper_block_.74
-___destroy_helper_block_.75
-___copy_helper_block_.77
-___destroy_helper_block_.78
+___copy_helper_block_.79
+___destroy_helper_block_.80
+___53+[ViewPay checkVideoWithContentCategory:andCallback:]_block_invoke.83
+___copy_helper_block_.84
+___destroy_helper_block_.85
+___copy_helper_block_.87
+___destroy_helper_block_.88
 +[ViewPay urlQuery]
 +[ViewPay urlArguments]
 ___block_descriptor_tmp
 ___block_descriptor_tmp.29
-___block_descriptor_tmp.72
-___block_descriptor_tmp.76
-___block_descriptor_tmp.80
-Apple LLVM version 9.1.0 (clang-902.0.39.1)
+___block_descriptor_tmp.82
+___block_descriptor_tmp.86
+___block_descriptor_tmp.90
+Apple LLVM version 10.0.0 (clang-1000.11.45.2)
 /Users/tibo/Desktop/ViewPay/ViewPay-work/_private/ViewPay/ViewPay.m
 /Users/tibo/Desktop/ViewPay/ViewPay-work/_private
 __destroy_helper_block_
 __copy_helper_block_
-__53+[ViewPay checkVideoWithContentCategory:andCallback:]_block_invoke.73
+__53+[ViewPay checkVideoWithContentCategory:andCallback:]_block_invoke.83
 __53+[ViewPay checkVideoWithContentCategory:andCallback:]_block_invoke_2
 __53+[ViewPay checkVideoWithContentCategory:andCallback:]_block_invoke
 __34+[ViewPay _presentAdWithCallback:]_block_invoke
@@ -109,8 +109,6 @@ __44-[VPWebViewController closeWithInteraction:]_block_invoke
 +[UIImage(ViewPay) vp_closeImage]
 +[UIImage(ViewPay) vp_disclosureImage]
 /Users/tibo/Desktop/ViewPay/ViewPay-work/_private/ViewPay/UIImage+ViewPay.m
-CGPointMake
-/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGGeometry.h
 +[ViewPayDataManager sharedManager]
 ___35+[ViewPayDataManager sharedManager]_block_invoke
 -[ViewPayDataManager userLocation]
@@ -144,5 +142,5 @@ _OBJC_IVAR_$_ViewPayDataManager._locationManager
 /Users/tibo/Desktop/ViewPay/ViewPay-work/_private/ViewPay/ViewPayDataManager.m
 /Users/tibo/Desktop/ViewPay/ViewPay-work/_private/ViewPay/ViewPayDataManager.h
 __35+[ViewPayDataManager sharedManager]_block_invoke
-/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/usr/include/dispatch/once.h
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/usr/include/dispatch/once.h
 /Users/tibo/Library/Developer/Xcode/DerivedData/ViewPaySDK-efvjgjsqcvfbyggmvoomkgjcmhwg/Build/Intermediates.noindex/ArchiveIntermediates/ViewPay/IntermediateBuildFilesPath/ViewPaySDK.build/Release-iphoneos/ViewPay.build/DerivedSources/ViewPay_vers.c

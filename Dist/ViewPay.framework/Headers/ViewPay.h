@@ -31,6 +31,6 @@ typedef NS_ENUM(NSUInteger, VPUserGender) {
 + (void)setUserAge:(int)age;
 
 + (void)presentAdWithCallback:(nonnull void (^)(VPAdStatus status))callback;
-+ (void)checkVideoWithContentCategory:(nullable NSString *)category andCallback:(nonnull void (^)(BOOL success))callback;
++ (void)checkVideoWithContentCategory:(nullable NSString *)category andCallback:(nonnull void (^)(BOOL success, NSError *error))callback;
 
 @end

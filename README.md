@@ -79,7 +79,7 @@ Si le callback retourne un succès, alors vous pouvez mettre à jour l'interface
 en Swift:
 
 ```swift
-ViewPay.checkVideo(withContentCategory: nil) { (success) in
+ViewPay.checkVideo(withContentCategory: nil) { (success, error) in
 	if (success) {
 		// Des campagnes sont disponibles
 		// Faites apparaitre le bouton dans votre paywall permettant à l'utilisateur d'accèder à son contenu via ViewPay.
@@ -94,7 +94,11 @@ en Objective-C:
 
 ```objective-c
 [ViewPay checkVideoWithContentCategory:nil
+<<<<<<< HEAD
 		andCallback:^(BOOL success) {
+=======
+		andCallback:^(BOOL success, NSError *error) {
+>>>>>>> d6c6c19... update framework
 			if (success) {
 				// Des campagnes sont disponibles.
 				// Faites apparaitre le bouton dans votre paywall permettant à l'utilisateur d'accèder à son contenu via ViewPay.
@@ -168,7 +172,7 @@ Vous pouvez également, lors de l'appel à la méthode `checkVideoWithContentCat
 en Swift :
 
 ```swift
-ViewPay.checkVideo(withContentCategory: "cinema") { (success) in
+ViewPay.checkVideo(withContentCategory: "cinema") { (success, error) in
 	if success {
 		...
 	}             
@@ -179,8 +183,8 @@ en Objective-C :
 
 
 ```objective-c
-[ViewPay checkVideoWithCategory:@"cinema" 
-	andCallback:^(BOOL success) {
+[ViewPay checkVideoWithContentCategory:@"cinema" 
+	andCallback:^(BOOL success, NSError *error) {
 		if (success) {
 			...
 		} 
