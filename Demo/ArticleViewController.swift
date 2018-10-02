@@ -28,7 +28,7 @@ class ArticleViewController: UIViewController {
         
         self.loader?.startAnimating()
         
-        ViewPay.checkVideo(withContentCategory: "sample") { (success) in
+        ViewPay.checkVideo(withContentCategory: "sample") { (success, error) in
             if (success) {
                 self.viewPayButton?.isHidden = false
             }
