@@ -1,4 +1,5 @@
 BCSymbolMap Version: 2.0
++[ViewPay setDebugEnabled:]
 +[ViewPay setAccountID:]
 +[ViewPay setUserGender:]
 +[ViewPay setUserAge:]
@@ -8,35 +9,36 @@ ___copy_helper_block_
 ___destroy_helper_block_
 +[ViewPay _presentAdWithCallback:]
 ___34+[ViewPay _presentAdWithCallback:]_block_invoke
-___copy_helper_block_.26
-___destroy_helper_block_.27
+___copy_helper_block_.28
+___destroy_helper_block_.29
 +[ViewPay checkVideoWithContentCategory:andCallback:]
 ___53+[ViewPay checkVideoWithContentCategory:andCallback:]_block_invoke
 ___53+[ViewPay checkVideoWithContentCategory:andCallback:]_block_invoke_2
-___copy_helper_block_.79
-___destroy_helper_block_.80
-___53+[ViewPay checkVideoWithContentCategory:andCallback:]_block_invoke.83
-___copy_helper_block_.84
-___destroy_helper_block_.85
-___copy_helper_block_.87
-___destroy_helper_block_.88
+___copy_helper_block_.83
+___destroy_helper_block_.84
+___53+[ViewPay checkVideoWithContentCategory:andCallback:]_block_invoke.87
+___copy_helper_block_.88
+___destroy_helper_block_.89
+___copy_helper_block_.91
+___destroy_helper_block_.92
 +[ViewPay urlQuery]
 +[ViewPay urlArguments]
 ___block_descriptor_tmp
-___block_descriptor_tmp.29
-___block_descriptor_tmp.82
+___block_descriptor_tmp.31
 ___block_descriptor_tmp.86
 ___block_descriptor_tmp.90
+___block_descriptor_tmp.94
 Apple LLVM version 10.0.0 (clang-1000.11.45.2)
 /Users/tibo/Desktop/ViewPay/ViewPay-work/_private/ViewPay/ViewPay.m
 /Users/tibo/Desktop/ViewPay/ViewPay-work/_private
 __destroy_helper_block_
 __copy_helper_block_
-__53+[ViewPay checkVideoWithContentCategory:andCallback:]_block_invoke.83
+__53+[ViewPay checkVideoWithContentCategory:andCallback:]_block_invoke.87
 __53+[ViewPay checkVideoWithContentCategory:andCallback:]_block_invoke_2
 __53+[ViewPay checkVideoWithContentCategory:andCallback:]_block_invoke
 __34+[ViewPay _presentAdWithCallback:]_block_invoke
 __33+[ViewPay presentAdWithCallback:]_block_invoke
+VPLog
 -[VPWebViewController init]
 -[VPWebViewController viewDidLoad]
 -[VPWebViewController userContentController:didReceiveScriptMessage:]
@@ -48,16 +50,16 @@ __33+[ViewPay presentAdWithCallback:]_block_invoke
 -[VPWebViewController showCloseButton]
 -[VPWebViewController closeWithInteraction:]
 ___44-[VPWebViewController closeWithInteraction:]_block_invoke
-___44-[VPWebViewController closeWithInteraction:]_block_invoke.182
+___44-[VPWebViewController closeWithInteraction:]_block_invoke.186
 ___44-[VPWebViewController closeWithInteraction:]_block_invoke_2
-___copy_helper_block_.183
-___destroy_helper_block_.184
-___copy_helper_block_.186
-___destroy_helper_block_.187
+___copy_helper_block_.187
+___destroy_helper_block_.188
+___copy_helper_block_.190
+___destroy_helper_block_.191
 -[VPWebViewController cropAccessButton]
 ___39-[VPWebViewController cropAccessButton]_block_invoke
-___copy_helper_block_.199
-___destroy_helper_block_.200
+___copy_helper_block_.203
+___destroy_helper_block_.204
 -[VPWebViewController closeAction:]
 -[VPWebViewController adValidationCallback]
 -[VPWebViewController setAdValidationCallback:]
@@ -75,9 +77,9 @@ ___destroy_helper_block_.200
 -[VPWebViewController setStatus:]
 -[VPWebViewController .cxx_destruct]
 ___clang_at_available_requires_core_foundation_framework
-___block_descriptor_tmp.185
 ___block_descriptor_tmp.189
-___block_descriptor_tmp.201
+___block_descriptor_tmp.193
+___block_descriptor_tmp.205
 _OBJC_IVAR_$_VPWebViewController._adValidationCallback
 _OBJC_IVAR_$_VPWebViewController._webView
 _OBJC_IVAR_$_VPWebViewController._closeButton
@@ -97,7 +99,7 @@ l_OBJC_LABEL_PROTOCOL_$_WKUIDelegate
 /Users/tibo/Desktop/ViewPay/ViewPay-work/_private/ViewPay/VPWebViewController.h
 __39-[VPWebViewController cropAccessButton]_block_invoke
 __44-[VPWebViewController closeWithInteraction:]_block_invoke_2
-__44-[VPWebViewController closeWithInteraction:]_block_invoke.182
+__44-[VPWebViewController closeWithInteraction:]_block_invoke.186
 __44-[VPWebViewController closeWithInteraction:]_block_invoke
 +[NSURL(ViewPay) vp_baseURL]
 +[NSURL(ViewPay) vp_URLForCheckVideo]
@@ -128,6 +130,8 @@ ___35+[ViewPayDataManager sharedManager]_block_invoke
 -[ViewPayDataManager setCvID:]
 -[ViewPayDataManager contentCategory]
 -[ViewPayDataManager setContentCategory:]
+-[ViewPayDataManager debug]
+-[ViewPayDataManager setDebug:]
 -[ViewPayDataManager locationManager]
 -[ViewPayDataManager setLocationManager:]
 -[ViewPayDataManager .cxx_destruct]
@@ -140,6 +144,7 @@ _OBJC_IVAR_$_ViewPayDataManager._userGender
 _OBJC_IVAR_$_ViewPayDataManager._hostID
 _OBJC_IVAR_$_ViewPayDataManager._cvID
 _OBJC_IVAR_$_ViewPayDataManager._contentCategory
+_OBJC_IVAR_$_ViewPayDataManager._debug
 _OBJC_IVAR_$_ViewPayDataManager._locationManager
 /Users/tibo/Desktop/ViewPay/ViewPay-work/_private/ViewPay/ViewPayDataManager.m
 /Users/tibo/Desktop/ViewPay/ViewPay-work/_private/ViewPay/ViewPayDataManager.h

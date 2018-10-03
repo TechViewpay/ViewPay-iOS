@@ -25,6 +25,8 @@ typedef NS_ENUM(NSUInteger, VPUserGender) {
 
 @interface ViewPay : NSObject
 
++ (void)setDebugEnabled:(BOOL)debug;
+
 + (void)setAccountID:(nonnull NSString *)accountID;
 
 + (void)setUserGender:(VPUserGender)gender;
