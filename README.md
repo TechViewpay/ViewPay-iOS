@@ -94,11 +94,7 @@ en Objective-C:
 
 ```objective-c
 [ViewPay checkVideoWithContentCategory:nil
-<<<<<<< HEAD
-		andCallback:^(BOOL success) {
-=======
 		andCallback:^(BOOL success, NSError *error) {
->>>>>>> d6c6c19... update framework
 			if (success) {
 				// Des campagnes sont disponibles.
 				// Faites apparaitre le bouton dans votre paywall permettant à l'utilisateur d'accèder à son contenu via ViewPay.
