@@ -15,7 +15,7 @@ Voici un exemple de déblocage d'article avec Viewpay :
 
 ## Installation du SDK
 
-### Cocoapods
+### Cocoapods (recommandé)
 
 Pour une simplifier l'installation et la mise à jour de vos librairies externes nous vous conseillons d'utiliser [Cocoapods](https://www.cocoapods.org).
 
@@ -36,6 +36,7 @@ Si vous ne souhaitez pas utiliser Cocoapods vous pouvez installer le SDK manuell
 - Téléchargez la dernière version du SDK via le lien suivant : [ViewPay.zip](https://github.com/TechViewpay/ViewPay-iOS/blob/master/Dist/ViewPay.zip?raw=true)
 - Décompressez l'archive
 - Glissez le fichier `ViewPay.framework` dans votre projet, sélectionnez l'option `Destination: Copy items if needed` et ajoutez le fichier à la target principale de votre projet.
+- Téléchargez et installez la dernière version du SDK Google IMA utilisé par ViewPay en suivant les instructions sur le [portail développeur de Google](https://developers.google.com/interactive-media-ads/docs/sdks/ios/)
 
 Enfin, pour terminer l'installation vous devez ajouter une étape scrip dans la configuration de votre build :
 
