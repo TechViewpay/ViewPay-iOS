@@ -17,6 +17,8 @@
 		1184A3F71FCDB8D100A5211B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1184A3F51FCDB8D100A5211B /* Main.storyboard */; };
 		1184A3F91FCDB8D100A5211B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1184A3F81FCDB8D100A5211B /* Assets.xcassets */; };
 		1184A3FC1FCDB8D100A5211B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1184A3FA1FCDB8D100A5211B /* LaunchScreen.storyboard */; };
+		336FE17524193076009340D9 /* GoogleInteractiveMediaAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 336FE17424193076009340D9 /* GoogleInteractiveMediaAds.framework */; };
+		336FE17624193076009340D9 /* GoogleInteractiveMediaAds.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 336FE17424193076009340D9 /* GoogleInteractiveMediaAds.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +52,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				336FE17624193076009340D9 /* GoogleInteractiveMediaAds.framework in Embed Frameworks */,
 				114C4B3A1FD6D9E9000CD3A0 /* ViewPay.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -73,6 +76,7 @@
 		1184A3F81FCDB8D100A5211B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1184A3FB1FCDB8D100A5211B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1184A3FD1FCDB8D100A5211B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		336FE17424193076009340D9 /* GoogleInteractiveMediaAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleInteractiveMediaAds.framework; path = Demo/GoogleInteractiveMediaAds.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				336FE17524193076009340D9 /* GoogleInteractiveMediaAds.framework in Frameworks */,
 				114C4B391FD6D9E9000CD3A0 /* ViewPay.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -105,6 +110,7 @@
 				1184A44D1FCEAF6600A5211B /* _private */,
 				1184A3F01FCDB8D100A5211B /* Demo */,
 				1184A3D61FCDB8A300A5211B /* Products */,
+				336FE17324193076009340D9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -140,6 +146,14 @@
 				114C4BC71FD708DD000CD3A0 /* ViewPaySDK.xcodeproj */,
 			);
 			path = _private;
+			sourceTree = "<group>";
+		};
+		336FE17324193076009340D9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				336FE17424193076009340D9 /* GoogleInteractiveMediaAds.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -406,10 +420,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 5PUDMY2H3Q;
+				DEVELOPMENT_TEAM = A7SGM6JEMA;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Dist",
+					"$(PROJECT_DIR)/Demo",
 				);
 				INFOPLIST_FILE = Demo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -433,6 +448,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Dist",
+					"$(PROJECT_DIR)/Demo",
 				);
 				INFOPLIST_FILE = Demo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
