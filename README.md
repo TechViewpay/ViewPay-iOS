@@ -8,7 +8,7 @@ Voici un exemple de déblocage d'article avec Viewpay :
 
 ![sample](https://github.com/TechViewpay/ViewPay-iOS/blob/master/DocImages/parcours_vp_mobile3.png?raw=true)
 
-## Prérequis
+## Prérequis 
 
 - Utiliser Xcode 7.0 ou supérieur 
 - Compatibilité iOS 9.0 ou supérieur
