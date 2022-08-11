@@ -5,6 +5,15 @@
    <BuildAction
       parallelizeBuildables = "YES"
       buildImplicitDependencies = "YES">
+      <PreActions>
+         <ExecutionAction
+            ActionType = "Xcode.IDEStandardExecutionActionsCore.ExecutionActionType.ShellScriptAction">
+            <ActionContent
+               title = "Run Script"
+               scriptText = "# Type a script or drag a script file from your workspace to insert its path.&#10;EXEC=&quot;${BUILT_PRODUCTS_DIR}/${FRAMEWORKS_FOLDER_PATH}/ViewPay.framework/ViewPay&quot;&#10;&#10;archs=&quot;$(lipo -info &quot;${EXEC}&quot; | rev | cut -d &apos;:&apos; -f1 | rev)&quot;&#10;stripped=&quot;&quot;&#10;for arch in $archs; do&#10;if ! [[ &quot;${VALID_ARCHS}&quot; == *&quot;$arch&quot;* ]]; then&#10;lipo -remove &quot;$arch&quot; -output &quot;${EXEC}&quot; &quot;${EXEC}&quot; || exit 1&#10;stripped=&quot;$stripped $arch&quot;&#10;fi&#10;done&#10;&#10;echo &quot;Architecture(s) ${stripped} have been removed from binary.&quot;&#10;">
+            </ActionContent>
+         </ExecutionAction>
+      </PreActions>
       <BuildActionEntries>
          <BuildActionEntry
             buildForTesting = "YES"
@@ -26,10 +35,7 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
-      language = ""
       shouldUseLaunchSchemeArgsEnv = "YES">
-      <Testables>
-      </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
@@ -39,8 +45,8 @@
             ReferencedContainer = "container:ViewPay.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
-      <AdditionalOptions>
-      </AdditionalOptions>
+      <Testables>
+      </Testables>
    </TestAction>
    <LaunchAction
       buildConfiguration = "Debug"
@@ -53,6 +59,15 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
+      <PreActions>
+         <ExecutionAction
+            ActionType = "Xcode.IDEStandardExecutionActionsCore.ExecutionActionType.ShellScriptAction">
+            <ActionContent
+               title = "Run Script"
+               scriptText = "# Type a script or drag a script file from your workspace to insert its path.&#10;EXEC=&quot;${BUILT_PRODUCTS_DIR}/${FRAMEWORKS_FOLDER_PATH}/ViewPay.framework/ViewPay&quot;&#10;&#10;archs=&quot;$(lipo -info &quot;${EXEC}&quot; | rev | cut -d &apos;:&apos; -f1 | rev)&quot;&#10;stripped=&quot;&quot;&#10;for arch in $archs; do&#10;if ! [[ &quot;${VALID_ARCHS}&quot; == *&quot;$arch&quot;* ]]; then&#10;lipo -remove &quot;$arch&quot; -output &quot;${EXEC}&quot; &quot;${EXEC}&quot; || exit 1&#10;stripped=&quot;$stripped $arch&quot;&#10;fi&#10;done&#10;&#10;echo &quot;Architecture(s) ${stripped} have been removed from binary.&quot;&#10;">
+            </ActionContent>
+         </ExecutionAction>
+      </PreActions>
       <BuildableProductRunnable
          runnableDebuggingMode = "0">
          <BuildableReference
@@ -63,8 +78,6 @@
             ReferencedContainer = "container:ViewPay.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
-      <AdditionalOptions>
-      </AdditionalOptions>
    </LaunchAction>
    <ProfileAction
       buildConfiguration = "Release"
