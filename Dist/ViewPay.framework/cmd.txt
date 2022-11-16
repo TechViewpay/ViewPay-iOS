@@ -54,7 +54,7 @@ xcodebuild -workspace ViewPaySDK.xcworkspace  -scheme ViewPay clean archive;
    
    
   xcodebuild  -workspace ViewPaySDK.xcworkspace  -scheme ViewPay -sdk iphonesimulator clean build;
-    xcodebuild  -workspace ViewPaySDK.xcworkspace  -scheme ViewPay -sdk iphoneos  build;
+    xcodebuild  -workspace ViewPaySDK.xcworkspace  -scheme ViewPay -sdk iphoneos  clean build;
     
     xcodebuild -create-xcframework -framework Products/Debug-iphoneos/ViewPay.framework -framework Products/Debug-iphonesimulator/ViewPay.framework  -output Products/ViewPay.xcframework
 
