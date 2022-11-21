@@ -193,7 +193,7 @@ vous pouvez le renseigner comme ceci :
 
 en swift :
 
-``swift
+```swift
 ViewPay.setPageInfo("652", pageTitle: "Page actualites guerre en ukraine") 
 ```
 
