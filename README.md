@@ -10,8 +10,8 @@ Voici un exemple de déblocage d'article avec Viewpay :
 
 ## Prérequis 
 
-- Utiliser Xcode 7.0 ou supérieur 
-- Compatibilité iOS 9.0 ou supérieur
+- Utiliser Xcode 13.0 ou supérieur 
+- Compatibilité iOS 10.0 ou supérieur
 
 ## Installation du SDK
 
@@ -35,7 +35,7 @@ Si vous ne souhaitez pas utiliser Cocoapods vous pouvez installer le SDK manuell
 
 - Téléchargez la dernière version du SDK via le lien suivant : [ViewPay.zip](https://github.com/TechViewpay/ViewPay-iOS/blob/master/Dist/ViewPay.zip?raw=true)
 - Décompressez l'archive
-- Glissez le fichier `ViewPay.framework` dans votre projet, sélectionnez l'option `Destination: Copy items if needed` et ajoutez le fichier à la target principale de votre projet.
+- Glissez le fichier `ViewPay.xcframework` dans votre projet, sélectionnez l'option `Destination: Copy items if needed` et ajoutez le fichier à la target principale de votre projet.
 - Téléchargez et installez la dernière version du SDK Google IMA utilisé par ViewPay en suivant les instructions sur le [portail développeur de Google](https://developers.google.com/interactive-media-ads/docs/sdks/ios/)
 
 Enfin, pour terminer l'installation vous devez ajouter une étape scrip dans la configuration de votre build :
@@ -43,7 +43,7 @@ Enfin, pour terminer l'installation vous devez ajouter une étape scrip dans la 
 - Rendez-vous dans la configuration de votre projet, sélectionnez votre target principale, onglet `Build Phases`, ajouter une étape en cliquant sur le `+` en haut à gauche, selectionnez `New Run Script Phase`.
 - Ouvrez le détail de la nouvelle étape à l'aide de la petite flèche et dans le contenu de l'étape entrez le script suivant: 
 ```
-EXEC="${BUILT_PRODUCTS_DIR}/${FRAMEWORKS_FOLDER_PATH}/ViewPay.framework/ViewPay"
+EXEC="${BUILT_PRODUCTS_DIR}/${FRAMEWORKS_FOLDER_PATH}/ViewPay.xcframework/ViewPay"
 
 archs="$(lipo -info "${EXEC}" | rev | cut -d ':' -f1 | rev)"
 stripped=""
@@ -146,6 +146,7 @@ Le callback de la méthode `presentAd:withContentCategory:andCallback:` vous per
 ## Méta-Données et customisation
 
 Le SDK ViewPay remonte un certain nombre de meta données pour permettre une meilleur catégorisation des publicités présentées à l'utilisateur.
+Particulierement, le meta données "pageInfo", qui est composé par l'id et le nom de la page, sert à catégoriser les statstiques des publicités visualisés par page. 
 
 Si ces informations sont disponibles dans votre application vous pouvez facilement renseigner le genre et l'âge de l'utilisateur à l'aide des 2 méthodes suivantes:
 
@@ -154,6 +155,7 @@ en Swift :
 ```swift
 ViewPay.setUserAge(42)
 ViewPay.setUserGender(.male) // valeurs disponibles: .male, .female ou .other
+ViewPay.setPageInfo("652", pageTitle: "Page actualites guerre en ukraine") // ces paramettres sont non obligatoires
 
 ```
 
@@ -162,6 +164,7 @@ en Objective-C :
 ```objective-c
 [ViewPay setUserAge:42];
 [ViewPay setUserGender:VPUserGenderMale]; // valeurs disponibles: VPUserGenderMale, VPUserGenderFemale ou VPUserGenderOther
+[ViewPay setPageInfo:@"6565" pageTitle:@"Page actualites guerre en ukraine"];// ces paramettres sont non obligatoires
 ```
 
 Vous pouvez également, lors de l'appel à la méthode `checkVideoWithContentCategory:andCallback:` renseigner la catégorie du contenu sous la forme d'une chaîne de caractères de votre choix afin de fournir un maximum de contexte :

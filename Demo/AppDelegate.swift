@@ -21,6 +21,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         ViewPay.setAccountID("b23d3f0235ae89e4")
         ViewPay.setUserAge(42)
         ViewPay.setUserGender(.male)
+        ViewPay.setPageInfo("652", pageTitle: "Page actualites guerre en ukraine")
 
         return true
     }
