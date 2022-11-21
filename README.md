@@ -146,7 +146,6 @@ Le callback de la méthode `presentAd:withContentCategory:andCallback:` vous per
 ## Méta-Données et customisation
 
 Le SDK ViewPay remonte un certain nombre de meta données pour permettre une meilleur catégorisation des publicités présentées à l'utilisateur.
-Particulierement, le meta données "pageInfo", qui est composé par l'id et le nom de la page, sert à catégoriser les statstiques des publicités visualisés par page. 
 
 Si ces informations sont disponibles dans votre application vous pouvez facilement renseigner le genre et l'âge de l'utilisateur à l'aide des 2 méthodes suivantes:
 
@@ -155,8 +154,6 @@ en Swift :
 ```swift
 ViewPay.setUserAge(42)
 ViewPay.setUserGender(.male) // valeurs disponibles: .male, .female ou .other
-ViewPay.setPageInfo("652", pageTitle: "Page actualites guerre en ukraine") // ces paramettres sont non obligatoires
-
 ```
 
 en Objective-C :
@@ -164,7 +161,6 @@ en Objective-C :
 ```objective-c
 [ViewPay setUserAge:42];
 [ViewPay setUserGender:VPUserGenderMale]; // valeurs disponibles: VPUserGenderMale, VPUserGenderFemale ou VPUserGenderOther
-[ViewPay setPageInfo:@"6565" pageTitle:@"Page actualites guerre en ukraine"];// ces paramettres sont non obligatoires
 ```
 
 Vous pouvez également, lors de l'appel à la méthode `checkVideoWithContentCategory:andCallback:` renseigner la catégorie du contenu sous la forme d'une chaîne de caractères de votre choix afin de fournir un maximum de contexte :
@@ -189,4 +185,20 @@ en Objective-C :
 			...
 		} 
 }];
+```
+
+Particulierement, le meta données "pageInfo", qui est composé par l'id et le nom de la page, sert à catégoriser les statstiques des publicités visualisés par page. 
+
+vous pouvez le renseigner comme ceci :
+
+en swift :
+
+``swift
+ViewPay.setPageInfo("652", pageTitle: "Page actualites guerre en ukraine") 
+```
+
+en Objective-C :
+
+```objective-c
+[ViewPay setPageInfo:@"6565" pageTitle:@"Page actualites guerre en ukraine"];
 ```
