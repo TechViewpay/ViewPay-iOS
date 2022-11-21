@@ -187,7 +187,7 @@ en Objective-C :
 }];
 ```
 
-Particulierement, le meta données "pageInfo", qui est composé par l'id et le nom de la page, sert à catégoriser les statstiques des publicités visualisés par page. 
+Particulierement, le meta données "pageInfo", composé par l'id et le nom de la page, sert à catégoriser les statstiques des publicités visualisés par page. 
 
 vous pouvez le renseigner comme ceci :
 
